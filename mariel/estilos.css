@@ -1,0 +1,99 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('imagen/fondo.jpg'); /* Asegúrate de que la ruta sea correcta */
+    background-size: cover;  /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Alinea al centro horizontal */
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.invitacion {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    text-align: center;
+    padding: 40px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente para la invitación */
+}
+
+h1 {
+    color: #6a5acd;
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-weight: 700; /* Hace el título más grueso */
+    text-transform: uppercase; /* Convierte las letras del título en mayúsculas */
+    letter-spacing: 2px; /* Añade un espacio entre las letras */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Agrega sombra al texto */
+    animation: animateTitle 3s infinite; /* Animación al título */
+}
+
+p {
+    color: #555;
+    font-size: 1.3em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-weight: 600; /* Letras más gruesas */
+}
+
+.nombre-bebe {
+    font-size: 1.8em;
+    color: #d2691e;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Sombra al nombre del bebé */
+}
+
+.detalles {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.detalles span {
+    display: block;
+}
+
+.firma {
+    margin-top: 40px;
+    font-size: 1.5em;
+    color: #6a5acd;
+    font-weight: 700; /* Letras más gruesas */
+}
+
+.footer {
+    font-size: 1em;
+    color: #aaa;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+/* Animación del título */
+@keyframes animateTitle {
+    0%, 100% {
+        transform: scale(1);
+        color: #6a5acd;
+    }
+    50% {
+        transform: scale(1.1);
+        color: #ff6347;
+    }
+}
+
+.video-container {
+    margin-left: 30px; /* Añade un espacio entre la invitación y el video */
+}
+
+video {
+    border-radius: 10px;
+}
